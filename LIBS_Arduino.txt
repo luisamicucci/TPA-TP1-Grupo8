@@ -1,0 +1,5 @@
+Instalar desde Library Manager:
+- DHT sensor library (Adafruit)
+- Adafruit Unified Sensor
+- Adafruit SSD1306
+- Adafruit GFX Library

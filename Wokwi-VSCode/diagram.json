@@ -1,0 +1,286 @@
+{
+  "version": 1,
+  "author": "Grupo 8",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {
+        "env": "arduino-esp32"
+      }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht",
+      "top": -10,
+      "left": -240,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-ssd1306",
+      "id": "oled",
+      "top": -140,
+      "left": 250,
+      "attrs": {
+        "i2cAddress": "0x3C",
+        "width": "128",
+        "height": "64"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot",
+      "top": 180,
+      "left": -220,
+      "attrs": {
+        "value": "0.5"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnMode",
+      "top": 160,
+      "left": 270,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnPlus",
+      "top": 220,
+      "left": 270,
+      "attrs": {
+        "color": "green",
+        "label": "+"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnMinus",
+      "top": 220,
+      "left": 350,
+      "attrs": {
+        "color": "blue",
+        "label": "-"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledPwm",
+      "top": -10,
+      "left": 260,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledAlarm",
+      "top": 20,
+      "left": 260,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rPwm",
+      "top": -10,
+      "left": 310,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rAlarm",
+      "top": 20,
+      "left": 310,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "dht:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "dht:GND",
+      "esp:GND.1",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "dht:SDA",
+      "esp:33",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "oled:SDA",
+      "esp:21",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "oled:SCL",
+      "esp:22",
+      "blue",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "oled:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "oled:GND",
+      "esp:GND.2",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "pot:1",
+      "esp:3V3",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "pot:2",
+      "esp:32",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "pot:3",
+      "esp:GND.3",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "btnMode:1.l",
+      "esp:19",
+      "orange",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "btnMode:2.l",
+      "esp:GND.4",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "btnPlus:1.l",
+      "esp:13",
+      "purple",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "btnPlus:2.l",
+      "esp:GND.5",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "btnMinus:1.l",
+      "esp:4",
+      "purple",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "btnMinus:2.l",
+      "esp:GND.6",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "ledPwm:C",
+      "esp:23",
+      "yellow",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "ledPwm:A",
+      "rPwm:1",
+      "gray",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rPwm:2",
+      "esp:3V3",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "ledAlarm:C",
+      "esp:14",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "ledAlarm:A",
+      "rAlarm:1",
+      "gray",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rAlarm:2",
+      "esp:3V3",
+      "red",
+      [
+        "v0"
+      ]
+    ]
+  ]
+}
