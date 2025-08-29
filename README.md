@@ -198,4 +198,4 @@ Se permite su uso con fines educativos citando apropiadamente a los autores.
 
 **Fecha de desarrollo:** Agosto 2025  
 **Institución:** Universidad Tecnológica Nacional (UTN)  
-**Materia:** Trabajo Práctico de Aplicaciones (TPA) - IoT
+**Materia:** Tecnologías para la Automatización (TPA) - IoT
