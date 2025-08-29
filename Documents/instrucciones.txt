@@ -1,0 +1,16 @@
+Deberán subir a la tarea de la UV: los archivos especificando Apellido, Nombre y legajo de  todos los integrantes del grupo. Hasta 5 integrantes.
+
+ Código fuente del  sketch: `sketch_grupo_XX.ino` .
+
+Archivo txt “txt_grupo_XX.txt”
+
+ Todos los integrantes del grupo deberán estar presentes el día de la evaluación
+
+En clase, el código se compilará y cargará en una ESP32 instalada en la placa de la cátedra y deberá funcionar correctamente.
+
+Grupo número 8:
+Rodriguez Melina Macarena - 86679
+Amicucci Luis Alberto - 59739
+Reyna Juan Ignacio - 89336
+Alvarez Veron, Mateo - 85927
+Sciarra, Martin - 69650
